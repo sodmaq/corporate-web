@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers — Nexvora Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-navy: #0b1f3a;
+        --color-gold: #c9a84c;
+        --color-off-white: #f8f7f4;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #f8f7f4;
+      }
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+      .bg-navy {
+        background-color: #0b1f3a;
+      }
+      .text-navy {
+        color: #0b1f3a;
+      }
+      .text-gold {
+        color: #c9a84c;
+      }
+      .bg-gold {
+        background-color: #c9a84c;
+      }
+      .bg-off-white {
+        background-color: #f8f7f4;
+      }
+      .nav-link {
+        @apply text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200;
+      }
+      .nav-link.active {
+        @apply text-white border-b border-[#C9A84C];
+      }
+      .btn-primary {
+        @apply inline-flex items-center bg-[#C9A84C] text-[#0B1F3A] font-semibold px-6 py-3 text-sm tracking-wide hover:bg-[#E8C97A] transition-all duration-200;
+      }
+      .section-label {
+        @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C];
+      }
+    </style>
+  </head>
+  <body class="text-slate-700 antialiased">
+    <header class="bg-navy sticky top-0 z-50 border-b border-white/5">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold flex items-center justify-center">
+              <span class="text-navy font-display font-bold text-sm">N</span>
+            </div>
+            <span class="font-display text-white text-lg font-semibold"
+              >Nexvora <span class="text-gold">Group</span></span
+            >
+          </a>
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Insights</a>
+            <a href="careers.html" class="nav-link active">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <a
+            href="contact.html"
+            class="hidden lg:block btn-primary text-xs px-4 py-2"
+            >Get Started</a
+          >
+          <button
+            class="lg:hidden text-white p-2"
+            onclick="document.getElementById('mob').classList.toggle('hidden')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mob"
+          class="hidden lg:hidden pb-4 border-t border-white/10 mt-2 flex flex-col gap-3 pt-4"
+        >
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a
+          ><a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="team.html" class="nav-link">Team</a
+          ><a href="blog.html" class="nav-link">Insights</a>
+          <a href="careers.html" class="nav-link text-white">Careers</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+          <a href="contact.html" class="btn-primary w-fit mt-2">Get Started</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-navy py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <img
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&auto=format&fit=crop&q=80"
+            alt="Team working together"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-navy/70"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-4">Join Our Team</p>
+          <h1
+            class="font-display text-5xl lg:text-6xl text-white font-bold max-w-2xl leading-tight"
+          >
+            Build Your Career at the Frontier
+          </h1>
+          <p class="text-slate-300 mt-5 max-w-lg">
+            Work on consequential problems, alongside exceptional colleagues, in
+            markets that are shaping the future of global business.
+          </p>
+          <div class="w-16 h-1 bg-gold mt-8"></div>
+        </div>
+      </section>
+
+      <!-- Culture & Benefits -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <p class="section-label mb-4">Why Nexvora</p>
+              <h2 class="font-display text-4xl text-navy font-bold mb-5">
+                A Career With Real Impact
+              </h2>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                At Nexvora, you won't shuffle PowerPoints in the background.
+                From your first year, you'll be leading workstreams, interacting
+                with clients, and contributing to outcomes that matter—for
+                organizations and the communities they serve.
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                We hire for potential, invest in growth, and create an
+                environment where curious, driven people do the best work of
+                their lives.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=700&auto=format&fit=crop&q=80"
+                alt="Nexvora colleagues collaborating in open office"
+                class="w-full h-80 object-cover shadow-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Benefits grid -->
+          <div>
+            <p class="section-label mb-8">Benefits & Perks</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">
+                  Competitive Compensation
+                </h3>
+                <p class="text-slate-500 text-sm">
+                  Top-quartile salaries, performance bonuses, and equity
+                  participation for senior roles.
+                </p>
+              </div>
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">Global Mobility</h3>
+                <p class="text-slate-500 text-sm">
+                  Opportunities to work across our 6 offices in Lagos, Nairobi,
+                  Johannesburg, London, Dubai, and Accra.
+                </p>
+              </div>
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">
+                  Learning & Development
+                </h3>
+                <p class="text-slate-500 text-sm">
+                  Annual learning budget of $5,000, sponsored MBA programs, and
+                  a structured mentorship framework.
+                </p>
+              </div>
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">Health & Wellness</h3>
+                <p class="text-slate-500 text-sm">
+                  Comprehensive medical, dental, and vision coverage plus a
+                  wellness allowance and mental health support.
+                </p>
+              </div>
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">Flexible Working</h3>
+                <p class="text-slate-500 text-sm">
+                  Hybrid work model, generous leave policy (25 days + public
+                  holidays), and a results-first culture.
+                </p>
+              </div>
+              <div class="p-6 bg-off-white border-l-4 border-gold">
+                <svg
+                  class="w-8 h-8 text-gold mb-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"
+                  />
+                </svg>
+                <h3 class="font-semibold text-navy mb-2">Community & Impact</h3>
+                <p class="text-slate-500 text-sm">
+                  Pro-bono consulting program, volunteer days, and an active
+                  social committee across all offices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open Positions -->
+      <section class="py-20 bg-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-8">Open Positions</p>
+          <h2 class="font-display text-4xl text-navy font-bold mb-10">
+            Current Opportunities
+          </h2>
+
+          <div class="space-y-4">
+            <!-- Job 1 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <div class="flex items-center gap-3 mb-1">
+                  <h3 class="font-semibold text-navy">
+                    Senior Consultant — Strategy
+                  </h3>
+                  <span
+                    class="bg-gold/20 text-gold text-xs px-2 py-0.5 font-semibold"
+                    >New</span
+                  >
+                </div>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>Lagos, Nigeria</span><span>·</span><span>Full-time</span
+                  ><span>·</span><span>5+ years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+            <!-- Job 2 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <h3 class="font-semibold text-navy mb-1">
+                  Manager — Digital Transformation
+                </h3>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>Nairobi, Kenya</span><span>·</span><span>Full-time</span
+                  ><span>·</span><span>7+ years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+            <!-- Job 3 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <h3 class="font-semibold text-navy mb-1">
+                  Associate — M&A Advisory
+                </h3>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>London, UK</span><span>·</span><span>Full-time</span
+                  ><span>·</span><span>2–4 years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+            <!-- Job 4 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <div class="flex items-center gap-3 mb-1">
+                  <h3 class="font-semibold text-navy">
+                    Principal — Risk & Compliance
+                  </h3>
+                  <span
+                    class="bg-gold/20 text-gold text-xs px-2 py-0.5 font-semibold"
+                    >New</span
+                  >
+                </div>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>Dubai, UAE</span><span>·</span><span>Full-time</span
+                  ><span>·</span><span>10+ years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+            <!-- Job 5 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <h3 class="font-semibold text-navy mb-1">
+                  Business Analyst — Market Expansion
+                </h3>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>Accra, Ghana</span><span>·</span><span>Full-time</span
+                  ><span>·</span><span>0–2 years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+            <!-- Job 6 -->
+            <div
+              class="bg-white p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md transition-shadow"
+            >
+              <div>
+                <h3 class="font-semibold text-navy mb-1">
+                  Senior Data Analyst — Digital Practice
+                </h3>
+                <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+                  <span>Lagos, Nigeria · Remote</span><span>·</span
+                  ><span>Full-time</span><span>·</span
+                  ><span>4+ years exp.</span>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="bg-navy text-white text-sm font-semibold px-5 py-2 hover:bg-navy/90 transition-colors whitespace-nowrap"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-16 bg-gold">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+          <h2 class="font-display text-3xl text-navy font-bold mb-4">
+            Don't See the Right Role?
+          </h2>
+          <p class="text-navy/70 mb-8">
+            We're always interested in meeting exceptional people. Send us your
+            CV and tell us how you can contribute.
+          </p>
+          <a
+            href="contact.html"
+            class="bg-navy text-white font-semibold px-8 py-3 text-sm hover:bg-navy/90 transition-colors inline-block"
+            >Send a Speculative Application</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-5">
+              <div class="w-8 h-8 bg-gold flex items-center justify-center">
+                <span class="text-navy font-display font-bold text-sm">N</span>
+              </div>
+              <span class="font-display text-white text-lg font-semibold"
+                >Nexvora <span class="text-gold">Group</span></span
+              >
+            </a>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Global strategic advisory firm building enterprises that endure.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Contact
+            </h4>
+            <p class="text-slate-400 text-sm mb-2">hello@nexvora.com</p>
+            <p class="text-slate-400 text-sm mb-2">+234 123 456 7890</p>
+            <p class="text-slate-400 text-sm">14 Victoria Island Blvd, Lagos</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2025 Nexvora Group. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="privacy-policy.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-and-conditions.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Terms & Conditions</a
+            >
+            <a
+              href="faq.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
