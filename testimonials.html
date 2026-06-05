@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials — Nexvora Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-navy: #0b1f3a;
+        --color-gold: #c9a84c;
+        --color-off-white: #f8f7f4;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #f8f7f4;
+      }
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+      .bg-navy {
+        background-color: #0b1f3a;
+      }
+      .text-navy {
+        color: #0b1f3a;
+      }
+      .text-gold {
+        color: #c9a84c;
+      }
+      .bg-gold {
+        background-color: #c9a84c;
+      }
+      .bg-off-white {
+        background-color: #f8f7f4;
+      }
+      .nav-link {
+        @apply text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200;
+      }
+      .nav-link.active {
+        @apply text-white border-b border-[#C9A84C];
+      }
+      .btn-primary {
+        @apply inline-flex items-center bg-[#C9A84C] text-[#0B1F3A] font-semibold px-6 py-3 text-sm tracking-wide hover:bg-[#E8C97A] transition-all duration-200;
+      }
+      .section-label {
+        @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C];
+      }
+      .stars {
+        @apply flex gap-0.5;
+      }
+    </style>
+  </head>
+  <body class="text-slate-700 antialiased">
+    <header class="bg-navy sticky top-0 z-50 border-b border-white/5">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold flex items-center justify-center">
+              <span class="text-navy font-display font-bold text-sm">N</span>
+            </div>
+            <span class="font-display text-white text-lg font-semibold"
+              >Nexvora <span class="text-gold">Group</span></span
+            >
+          </a>
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Insights</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <a
+            href="contact.html"
+            class="hidden lg:block btn-primary text-xs px-4 py-2"
+            >Get Started</a
+          >
+          <button
+            class="lg:hidden text-white p-2"
+            onclick="document.getElementById('mob').classList.toggle('hidden')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mob"
+          class="hidden lg:hidden pb-4 border-t border-white/10 mt-2 flex flex-col gap-3 pt-4"
+        >
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a
+          ><a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="team.html" class="nav-link">Team</a
+          ><a href="blog.html" class="nav-link">Insights</a>
+          <a href="careers.html" class="nav-link">Careers</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-navy py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-4">Client Voices</p>
+          <h1
+            class="font-display text-5xl lg:text-6xl text-white font-bold max-w-xl leading-tight"
+          >
+            What Our Clients Say
+          </h1>
+          <div class="w-16 h-1 bg-gold mt-8"></div>
+          <!-- Stats -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-14 border-t border-white/10 pt-10"
+          >
+            <div>
+              <div class="font-display text-4xl text-white font-bold">
+                97<span class="text-gold">%</span>
+              </div>
+              <div class="text-slate-400 text-sm mt-1">Client Retention</div>
+            </div>
+            <div>
+              <div class="font-display text-4xl text-white font-bold">
+                4.9<span class="text-gold">/5</span>
+              </div>
+              <div class="text-slate-400 text-sm mt-1">Average Rating</div>
+            </div>
+            <div>
+              <div class="font-display text-4xl text-white font-bold">
+                340<span class="text-gold">+</span>
+              </div>
+              <div class="text-slate-400 text-sm mt-1">Satisfied Clients</div>
+            </div>
+            <div>
+              <div class="font-display text-4xl text-white font-bold">
+                88<span class="text-gold">%</span>
+              </div>
+              <div class="text-slate-400 text-sm mt-1">Repeat Engagements</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Testimonial -->
+      <section class="py-16 bg-gold">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <svg
+            class="w-10 h-10 text-navy/30 mx-auto mb-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+            />
+          </svg>
+          <p
+            class="font-display text-2xl text-navy font-semibold leading-relaxed mb-8 italic"
+          >
+            "Nexvora didn't arrive with a pre-packaged solution. They took the
+            time to understand our specific context, challenged our assumptions
+            constructively, and designed an approach that was genuinely
+            fit-for-purpose. Eighteen months later, we've exceeded every target
+            we set. They are a genuinely exceptional firm."
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80"
+              alt="Oluwaseun Adeyemi"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div class="text-left">
+              <div class="font-semibold text-navy">Oluwaseun Adeyemi</div>
+              <div class="text-navy/60 text-sm">
+                Group CEO, Transcontinental Holdings
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Grid -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-10">All Reviews</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonials -->
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "Nexvora doubled our operating margins in 18 months by
+                redesigning our core processes and embedding a performance
+                culture. The results speak for themselves."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80"
+                  alt="David Okonkwo"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">
+                    David Okonkwo
+                  </div>
+                  <div class="text-slate-400 text-xs">
+                    CEO, Meridian Capital Holdings
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "The digital transformation program they led transformed how we
+                serve 2 million customers across 6 countries. Exceptional
+                execution and genuinely committed people."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80"
+                  alt="Sarah Chen"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">Sarah Chen</div>
+                  <div class="text-slate-400 text-xs">
+                    CTO, Harborview Financial Group
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "Our West Africa market entry was a masterclass in execution.
+                Nexvora's local knowledge and regulatory expertise shaved at
+                least a year off our timeline."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&auto=format&fit=crop&q=80"
+                  alt="Marcus Hartley"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">
+                    Marcus Hartley
+                  </div>
+                  <div class="text-slate-400 text-xs">
+                    VP Strategy, GlobalTech Ventures
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "Their M&A due diligence uncovered risks that would have
+                derailed the acquisition. Their structured approach to
+                post-merger integration then delivered 120% of the synergy
+                target."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80"
+                  alt="Amina Bello"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">Amina Bello</div>
+                  <div class="text-slate-400 text-xs">
+                    COO, Vantage Resources PLC
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "We engaged Nexvora for a leadership restructuring program
+                during a particularly difficult period. Their change management
+                expertise prevented what could have been organizational chaos."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&auto=format&fit=crop&q=80"
+                  alt="Rajiv Nair"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">Rajiv Nair</div>
+                  <div class="text-slate-400 text-xs">
+                    MD, Crestbridge Infrastructure
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-off-white p-8 border border-slate-100">
+              <div class="stars mb-4">
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg class="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                "I've worked with major global firms throughout my career.
+                Nexvora is the first consultancy that felt genuinely invested in
+                our success rather than just billing hours."
+              </p>
+              <div class="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&auto=format&fit=crop&q=80"
+                  alt="Chiamaka Eze"
+                  class="w-10 h-10 object-cover rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-navy text-sm">
+                    Chiamaka Eze
+                  </div>
+                  <div class="text-slate-400 text-xs">
+                    CFO, Apex Energy Solutions
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-16 bg-gold">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+          <h2 class="font-display text-3xl text-navy font-bold mb-4">
+            Ready to Write Your Success Story?
+          </h2>
+          <p class="text-navy/70 mb-8">
+            Join 340+ organizations that have transformed their performance with
+            Nexvora Group.
+          </p>
+          <a
+            href="contact.html"
+            class="bg-navy text-white font-semibold px-8 py-3 text-sm hover:bg-navy/90 transition-colors inline-block"
+            >Start a Conversation</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-5">
+              <div class="w-8 h-8 bg-gold flex items-center justify-center">
+                <span class="text-navy font-display font-bold text-sm">N</span>
+              </div>
+              <span class="font-display text-white text-lg font-semibold"
+                >Nexvora <span class="text-gold">Group</span></span
+              >
+            </a>
+            <p class="text-slate-400 text-sm">
+              Global strategic advisory firm building enterprises that endure.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Contact
+            </h4>
+            <p class="text-slate-400 text-sm mb-2">hello@nexvora.com</p>
+            <p class="text-slate-400 text-sm mb-2">+234 123 456 7890</p>
+            <p class="text-slate-400 text-sm">14 Victoria Island Blvd, Lagos</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2025 Nexvora Group. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="privacy-policy.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-and-conditions.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Terms & Conditions</a
+            >
+            <a
+              href="faq.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs — Nexvora Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-navy: #0b1f3a;
+        --color-gold: #c9a84c;
+        --color-off-white: #f8f7f4;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #f8f7f4;
+      }
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+      .bg-navy {
+        background-color: #0b1f3a;
+      }
+      .text-navy {
+        color: #0b1f3a;
+      }
+      .text-gold {
+        color: #c9a84c;
+      }
+      .bg-gold {
+        background-color: #c9a84c;
+      }
+      .bg-off-white {
+        background-color: #f8f7f4;
+      }
+      .nav-link {
+        @apply text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200;
+      }
+      .nav-link.active {
+        @apply text-white border-b border-[#C9A84C];
+      }
+      .btn-primary {
+        @apply inline-flex items-center bg-[#C9A84C] text-[#0B1F3A] font-semibold px-6 py-3 text-sm tracking-wide hover:bg-[#E8C97A] transition-all duration-200;
+      }
+      .section-label {
+        @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C];
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+      }
+      .accordion-content.open {
+        max-height: 500px;
+      }
+      .accordion-icon {
+        transition: transform 0.3s ease;
+      }
+      .accordion-icon.open {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="text-slate-700 antialiased">
+    <header class="bg-navy sticky top-0 z-50 border-b border-white/5">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold flex items-center justify-center">
+              <span class="text-navy font-display font-bold text-sm">N</span>
+            </div>
+            <span class="font-display text-white text-lg font-semibold"
+              >Nexvora <span class="text-gold">Group</span></span
+            >
+          </a>
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Insights</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <a
+            href="contact.html"
+            class="hidden lg:block btn-primary text-xs px-4 py-2"
+            >Get Started</a
+          >
+          <button
+            class="lg:hidden text-white p-2"
+            onclick="document.getElementById('mob').classList.toggle('hidden')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mob"
+          class="hidden lg:hidden pb-4 border-t border-white/10 mt-2 flex flex-col gap-3 pt-4"
+        >
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a
+          ><a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="team.html" class="nav-link">Team</a
+          ><a href="blog.html" class="nav-link">Insights</a>
+          <a href="careers.html" class="nav-link">Careers</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-navy py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-4">FAQs</p>
+          <h1
+            class="font-display text-5xl lg:text-6xl text-white font-bold max-w-xl leading-tight"
+          >
+            Frequently Asked Questions
+          </h1>
+          <div class="w-16 h-1 bg-gold mt-8"></div>
+        </div>
+      </section>
+
+      <!-- FAQ Accordion -->
+      <section class="py-20 bg-off-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Category: Working With Us -->
+          <div class="mb-12">
+            <p class="section-label mb-6">Working With Us</p>
+            <div class="space-y-3">
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >What types of organizations does Nexvora Group typically
+                    work with?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    We work with a broad range of organizations—from
+                    multinational corporations and private equity-backed
+                    businesses to government agencies and development finance
+                    institutions. Our clients typically share a common
+                    characteristic: they're facing a consequential strategic
+                    challenge or transformation that requires deep expertise and
+                    committed partnership. While we serve organizations across
+                    many sectors, we have particularly deep expertise in
+                    financial services, energy, telecommunications, and public
+                    sector.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >How does Nexvora Group structure its engagements?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Each engagement is scoped individually based on your
+                    specific challenge and objectives. We typically begin with a
+                    diagnostic phase (2–4 weeks) to define the problem and align
+                    on scope, followed by an analytical phase, a design phase,
+                    and a delivery/implementation phase. Engagements range from
+                    focused 6-week strategy sprints to multi-year transformation
+                    programs. We agree on clear milestones, deliverables, and
+                    success metrics before work begins.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >What is the typical cost of a Nexvora engagement?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Our fees vary based on scope, complexity, team composition,
+                    and duration. Short diagnostic projects typically start from
+                    $80,000 USD, while large-scale transformation programs can
+                    range significantly higher. We price based on value
+                    delivered, not just time spent, and we're happy to discuss
+                    flexible arrangements for the right opportunities. Contact
+                    us for a preliminary scoping conversation—there's no
+                    obligation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >Who will actually be working on our engagement?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    We operate a senior-led model. The partner who leads your
+                    proposal will lead your engagement—not hand it off after
+                    signing. Every team includes at least one senior consultant
+                    or manager with direct relevant experience, and partners
+                    remain actively involved throughout, not just at key
+                    milestones. We'll introduce you to the full engagement team
+                    before work begins so you can review and approve the
+                    composition.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >How long does a typical project take?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Project timelines vary considerably. A focused strategy
+                    project might run 6–12 weeks. A market entry program could
+                    span 4–8 months. A full digital transformation or
+                    post-merger integration program may run 12–36 months. We
+                    help you think clearly about what can be accomplished in
+                    what timeframe, and we'll be honest when ambitious timelines
+                    are unrealistic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Our Approach -->
+          <div class="mb-12">
+            <p class="section-label mb-6">Our Approach</p>
+            <div class="space-y-3">
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >How does Nexvora differ from global consulting firms like
+                    McKinsey or BCG?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Three key differences: first, we have deeper on-the-ground
+                    expertise in African and emerging markets—not imported
+                    frameworks applied remotely, but genuine contextual
+                    knowledge. Second, we stay through implementation. Many
+                    global firms deliver recommendations and exit; we embed,
+                    execute, and are accountable for results. Third, you get
+                    senior attention throughout, not a team of junior analysts
+                    supervised remotely by a partner you rarely see.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >Do you work with clients outside Africa?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Yes. While our heritage and deepest expertise is in African
+                    markets, we serve clients globally—particularly
+                    organizations looking to enter, invest in, or partner with
+                    African businesses. Our London and Dubai offices primarily
+                    serve European and Middle Eastern clients with Africa-facing
+                    strategies, and we work with global multinationals on
+                    transformation programs across their international
+                    operations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >How do you measure and report on the impact of your
+                    work?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    At the outset of every engagement, we co-define a set of
+                    impact metrics with the client—financial, operational, and
+                    strategic outcomes that represent true success. We track
+                    these throughout the engagement and report against them at
+                    regular intervals. We also conduct post-engagement reviews 6
+                    and 12 months after completion to assess the durability of
+                    outcomes. We're genuinely proud of our track record and
+                    welcome scrutiny of it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category: Careers -->
+          <div class="mb-12">
+            <p class="section-label mb-6">Careers</p>
+            <div class="space-y-3">
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >What does the recruitment process look like?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Our process typically runs 3–4 weeks and consists of: (1) CV
+                    and cover letter review, (2) a 30-minute introductory call
+                    with HR, (3) a case study interview with a senior
+                    consultant, (4) a written case exercise, and (5) a
+                    final-round interview with a partner. We aim to give
+                    candidates a realistic preview of the work and make offers
+                    promptly to strong candidates.
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-100">
+                <button
+                  class="w-full flex items-center justify-between p-6 text-left"
+                  onclick="toggle(this)"
+                >
+                  <span class="font-semibold text-navy pr-4"
+                    >Do you hire graduates straight from university?</span
+                  >
+                  <svg
+                    class="accordion-icon w-5 h-5 text-gold shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p class="px-6 pb-6 text-slate-500 text-sm leading-relaxed">
+                    Yes—we hire exceptional graduates into our Business Analyst
+                    role. We look for strong analytical ability, intellectual
+                    curiosity, and a genuine interest in African business. A
+                    background in economics, engineering, finance, or related
+                    fields is common, but we value diverse educational
+                    backgrounds. Our analyst program includes structured
+                    training and a mentorship track designed to accelerate your
+                    development into a consultant within 2 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Still have questions? -->
+          <div class="bg-navy p-10 text-center">
+            <h3 class="font-display text-2xl text-white font-bold mb-3">
+              Still Have Questions?
+            </h3>
+            <p class="text-slate-400 text-sm mb-6">
+              Our team is happy to answer any questions not covered here.
+            </p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-5">
+              <div class="w-8 h-8 bg-gold flex items-center justify-center">
+                <span class="text-navy font-display font-bold text-sm">N</span>
+              </div>
+              <span class="font-display text-white text-lg font-semibold"
+                >Nexvora <span class="text-gold">Group</span></span
+              >
+            </a>
+            <p class="text-slate-400 text-sm">
+              Global strategic advisory firm building enterprises that endure.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Contact
+            </h4>
+            <p class="text-slate-400 text-sm mb-2">hello@nexvora.com</p>
+            <p class="text-slate-400 text-sm mb-2">+234 123 456 7890</p>
+            <p class="text-slate-400 text-sm">14 Victoria Island Blvd, Lagos</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2025 Nexvora Group. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="privacy-policy.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-and-conditions.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Terms & Conditions</a
+            >
+            <a
+              href="faq.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggle(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector(".accordion-icon");
+        const isOpen = content.classList.contains("open");
+        // Close all
+        document
+          .querySelectorAll(".accordion-content")
+          .forEach((c) => c.classList.remove("open"));
+        document
+          .querySelectorAll(".accordion-icon")
+          .forEach((i) => i.classList.remove("open"));
+        // Open clicked if it was closed
+        if (!isOpen) {
+          content.classList.add("open");
+          icon.classList.add("open");
+        }
+      }
+    </script>
+  </body>
+</html>

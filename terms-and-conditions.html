@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions — Nexvora Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display: "Playfair Display", Georgia, serif;
+        --font-body: "DM Sans", sans-serif;
+        --color-navy: #0b1f3a;
+        --color-navy-light: #132848;
+        --color-gold: #c9a84c;
+        --color-gold-light: #e8c97a;
+        --color-off-white: #f8f7f4;
+      }
+      body {
+        font-family: var(--font-body);
+        background-color: var(--color-off-white);
+      }
+      .font-display {
+        font-family: var(--font-display);
+      }
+      .bg-navy {
+        background-color: var(--color-navy);
+      }
+      .text-navy {
+        color: var(--color-navy);
+      }
+      .text-gold {
+        color: var(--color-gold);
+      }
+      .bg-gold {
+        background-color: var(--color-gold);
+      }
+      .bg-off-white {
+        background-color: var(--color-off-white);
+      }
+      .nav-link {
+        @apply text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 tracking-wide;
+      }
+      .nav-link.active {
+        @apply text-white border-b border-[#C9A84C];
+      }
+      .btn-primary {
+        @apply inline-flex items-center gap-2 bg-[#C9A84C] text-[#0B1F3A] font-semibold px-6 py-3 text-sm tracking-wide hover:bg-[#E8C97A] transition-all duration-200;
+      }
+      .section-label {
+        @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C];
+      }
+      .prose-section h2 {
+        @apply font-display text-2xl text-navy font-bold mt-12 mb-4;
+      }
+      .prose-section h3 {
+        @apply font-semibold text-navy text-base mt-6 mb-2;
+      }
+      .prose-section p {
+        @apply text-slate-600 leading-relaxed mb-4 text-sm;
+      }
+      .prose-section ul {
+        @apply space-y-2 mb-4 ml-4;
+      }
+      .prose-section ul li {
+        @apply text-slate-600 text-sm leading-relaxed flex items-start gap-2;
+      }
+    </style>
+  </head>
+  <body class="text-slate-700 antialiased">
+    <!-- Navigation -->
+    <header class="bg-navy sticky top-0 z-50 border-b border-white/5">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold flex items-center justify-center">
+              <span class="text-navy font-display font-bold text-sm">N</span>
+            </div>
+            <span
+              class="font-display text-white text-lg font-semibold tracking-wide"
+              >Nexvora <span class="text-gold">Group</span></span
+            >
+          </a>
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Insights</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <div class="hidden lg:block">
+            <a href="contact.html" class="btn-primary text-xs px-4 py-2"
+              >Get Started</a
+            >
+          </div>
+          <button
+            class="lg:hidden text-white p-2"
+            onclick="
+              document.getElementById('mobileMenu').classList.toggle('hidden')
+            "
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mobileMenu"
+          class="hidden lg:hidden pb-4 border-t border-white/10 mt-2"
+        >
+          <div class="flex flex-col gap-3 pt-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link">Insights</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="contact.html" class="btn-primary w-fit mt-2"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-navy py-20 relative overflow-hidden">
+        <div
+          class="absolute right-0 top-0 w-96 h-96 border border-[#C9A84C]/10 rotate-45 translate-x-48 -translate-y-24"
+        ></div>
+        <div
+          class="absolute bottom-0 left-20 w-48 h-48 border border-[#C9A84C]/10 rotate-12"
+        ></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-4">Legal</p>
+          <h1 class="font-display text-5xl text-white font-bold leading-tight">
+            Terms &amp; Conditions
+          </h1>
+          <p class="text-slate-400 text-sm mt-4">
+            Last updated: January 1, 2025
+          </p>
+          <div class="w-16 h-1 bg-gold mt-6"></div>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Quick Nav -->
+          <div class="bg-off-white border border-slate-100 p-6 mb-12">
+            <p
+              class="text-xs font-semibold tracking-widest uppercase text-navy mb-4"
+            >
+              Contents
+            </p>
+            <div class="grid sm:grid-cols-2 gap-2">
+              <a
+                href="#acceptance"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Acceptance of Terms</a
+              >
+              <a
+                href="#services"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Services</a
+              >
+              <a
+                href="#ip"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Intellectual Property</a
+              >
+              <a
+                href="#confidentiality"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Confidentiality</a
+              >
+              <a
+                href="#liability"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Limitation of Liability</a
+              >
+              <a
+                href="#payment"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Payment Terms</a
+              >
+              <a
+                href="#termination"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Termination</a
+              >
+              <a
+                href="#governing"
+                class="text-sm text-slate-500 hover:text-gold transition-colors flex items-center gap-2"
+                ><span class="text-gold">—</span> Governing Law</a
+              >
+            </div>
+          </div>
+
+          <div class="prose-section">
+            <p>
+              These Terms and Conditions ("Terms") govern your access to and use
+              of the Nexvora Group website and any services provided by Nexvora
+              Group Ltd ("Nexvora," "we," "our," or "us"). By accessing our
+              website or engaging our services, you agree to be bound by these
+              Terms. If you do not agree, please discontinue use immediately.
+            </p>
+
+            <!-- Section 1 -->
+            <div id="acceptance">
+              <h2>1. Acceptance of Terms</h2>
+              <p>
+                By accessing this website or entering into any service
+                engagement with Nexvora Group, you confirm that you are at least
+                18 years of age, have the legal authority to enter into binding
+                agreements, and agree to comply with these Terms in full. These
+                Terms apply to all visitors, clients, and others who access or
+                use our services.
+              </p>
+              <p>
+                We reserve the right to update these Terms at any time.
+                Continued use of our website or services following notification
+                of changes constitutes acceptance of the revised Terms.
+              </p>
+            </div>
+
+            <!-- Section 2 -->
+            <div id="services">
+              <h2>2. Services</h2>
+              <p>
+                Nexvora Group provides management consulting, strategic
+                advisory, digital transformation, and related professional
+                services. The specific scope, deliverables, timelines, and fees
+                for any client engagement shall be set out in a separate
+                Statement of Work or Engagement Letter, which, together with
+                these Terms, forms the entire agreement between the parties.
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >All services are provided on a professional best-efforts
+                  basis
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Nexvora does not guarantee specific business outcomes from
+                  advisory services
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >We reserve the right to decline or terminate any engagement
+                  at our discretion
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 3 -->
+            <div id="ip">
+              <h2>3. Intellectual Property</h2>
+              <p>
+                All content on this website — including text, graphics, logos,
+                images, and software — is the property of Nexvora Group and is
+                protected by applicable intellectual property laws. You may not
+                reproduce, distribute, or create derivative works without our
+                prior written consent.
+              </p>
+              <h3>Client Deliverables</h3>
+              <p>
+                Upon full payment of all fees, Nexvora grants clients a
+                non-exclusive licence to use deliverables produced specifically
+                for their engagement. Nexvora retains ownership of all
+                methodologies, frameworks, tools, and pre-existing intellectual
+                property used in the delivery of services.
+              </p>
+            </div>
+
+            <!-- Section 4 -->
+            <div id="confidentiality">
+              <h2>4. Confidentiality</h2>
+              <p>
+                Both parties acknowledge that in the course of an engagement,
+                each may have access to confidential information of the other.
+                Each party agrees to:
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Hold all confidential information in strict confidence
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Use confidential information solely for the purposes of the
+                  engagement
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Not disclose confidential information to any third party
+                  without prior written consent
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Return or destroy confidential information upon request or
+                  termination of the engagement
+                </li>
+              </ul>
+              <p>
+                Confidentiality obligations survive termination of any
+                engagement for a period of three (3) years.
+              </p>
+            </div>
+
+            <!-- Section 5 -->
+            <div id="liability">
+              <h2>5. Limitation of Liability</h2>
+              <p>
+                To the maximum extent permitted by applicable law, Nexvora Group
+                shall not be liable for any indirect, incidental, special,
+                consequential, or punitive damages arising out of or related to
+                your use of our services or website, even if advised of the
+                possibility of such damages.
+              </p>
+              <p>
+                Our total aggregate liability to any client for any claim
+                arising out of or related to an engagement shall not exceed the
+                total fees paid by that client to Nexvora in the three (3)
+                months preceding the claim.
+              </p>
+              <p>
+                Nothing in these Terms limits liability for fraud, gross
+                negligence, or any other matter that cannot be excluded by law.
+              </p>
+            </div>
+
+            <!-- Section 6 -->
+            <div id="payment">
+              <h2>6. Payment Terms</h2>
+              <p>
+                Payment terms for each engagement will be specified in the
+                applicable Engagement Letter. Unless otherwise agreed:
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Invoices are due within 30 days of the invoice date
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Late payments may attract interest at 2% per month on the
+                  outstanding balance
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >All fees are exclusive of applicable taxes unless stated
+                  otherwise
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Nexvora reserves the right to suspend services for overdue
+                  accounts
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 7 -->
+            <div id="termination">
+              <h2>7. Termination</h2>
+              <p>
+                Either party may terminate an engagement by providing written
+                notice as specified in the relevant Engagement Letter. In the
+                event of termination:
+              </p>
+              <ul>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >The client shall pay for all work completed and expenses
+                  incurred up to the termination date
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Nexvora will deliver all completed work product to the client
+                </li>
+                <li>
+                  <span
+                    class="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 shrink-0"
+                  ></span
+                  >Confidentiality and IP provisions shall survive termination
+                </li>
+              </ul>
+              <p>
+                Nexvora may terminate immediately and without notice in cases of
+                material breach, non-payment, or conduct that could harm our
+                reputation or the safety of our team.
+              </p>
+            </div>
+
+            <!-- Section 8 -->
+            <div id="governing">
+              <h2>8. Governing Law &amp; Dispute Resolution</h2>
+              <p>
+                These Terms and any disputes arising from them shall be governed
+                by and construed in accordance with the laws of the Federal
+                Republic of Nigeria, without regard to its conflict of law
+                provisions.
+              </p>
+              <p>
+                Any dispute that cannot be resolved through good-faith
+                negotiation within 30 days shall be referred to binding
+                arbitration in Lagos, Nigeria, under the Arbitration and
+                Conciliation Act. The language of arbitration shall be English.
+              </p>
+              <h3>Contact for Legal Matters</h3>
+              <div class="bg-off-white border border-slate-100 p-6 mt-4">
+                <p class="font-semibold text-navy text-sm mb-1">
+                  Nexvora Group — Legal Department
+                </p>
+                <p class="text-slate-500 text-sm">
+                  14 Victoria Island Boulevard, Lagos, Nigeria 101241
+                </p>
+                <a
+                  href="mailto:legal@nexvora.com"
+                  class="text-gold text-sm hover:underline"
+                  >legal@nexvora.com</a
+                >
+              </div>
+            </div>
+
+            <p
+              class="mt-10 text-xs text-slate-400 border-t border-slate-100 pt-8"
+            >
+              These Terms & Conditions were last reviewed and updated on January
+              1, 2025. If you have questions about any provision, please contact
+              us before engaging our services.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="lg:col-span-2">
+            <a href="index.html" class="flex items-center gap-3 mb-6">
+              <div class="w-8 h-8 bg-gold flex items-center justify-center">
+                <span class="text-navy font-display font-bold text-sm">N</span>
+              </div>
+              <span class="font-display text-white text-lg font-semibold"
+                >Nexvora <span class="text-gold">Group</span></span
+              >
+            </a>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+              Global strategic advisory firm partnering with leaders to engineer
+              growth, transform operations, and build enterprises that endure.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm tracking-widest uppercase mb-6"
+            >
+              Company
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="team.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm tracking-widest uppercase mb-6"
+            >
+              Contact
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="w-4 h-4 text-gold mt-0.5 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span class="text-slate-400 text-sm"
+                  >14 Victoria Island Boulevard<br />Lagos, Nigeria 101241</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-4 h-4 text-gold shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <a
+                  href="mailto:hello@nexvora.com"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >hello@nexvora.com</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-4 h-4 text-gold shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  href="tel:+2341234567890"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >+234 123 456 7890</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2025 Nexvora Group. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="privacy-policy.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="terms-and-conditions.html" class="text-gold text-xs"
+              >Terms & Conditions</a
+            >
+            <a
+              href="faq.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
