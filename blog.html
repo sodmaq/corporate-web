@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights — Nexvora Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-navy: #0b1f3a;
+        --color-gold: #c9a84c;
+        --color-off-white: #f8f7f4;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #f8f7f4;
+      }
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+      .bg-navy {
+        background-color: #0b1f3a;
+      }
+      .text-navy {
+        color: #0b1f3a;
+      }
+      .text-gold {
+        color: #c9a84c;
+      }
+      .bg-gold {
+        background-color: #c9a84c;
+      }
+      .bg-off-white {
+        background-color: #f8f7f4;
+      }
+      .nav-link {
+        @apply text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200;
+      }
+      .nav-link.active {
+        @apply text-white border-b border-[#C9A84C];
+      }
+      .btn-primary {
+        @apply inline-flex items-center bg-[#C9A84C] text-[#0B1F3A] font-semibold px-6 py-3 text-sm tracking-wide hover:bg-[#E8C97A] transition-all duration-200;
+      }
+      .section-label {
+        @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C];
+      }
+      .card-hover {
+        @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+      }
+    </style>
+  </head>
+  <body class="text-slate-700 antialiased">
+    <header class="bg-navy sticky top-0 z-50 border-b border-white/5">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold flex items-center justify-center">
+              <span class="text-navy font-display font-bold text-sm">N</span>
+            </div>
+            <span class="font-display text-white text-lg font-semibold"
+              >Nexvora <span class="text-gold">Group</span></span
+            >
+          </a>
+          <div class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="blog.html" class="nav-link active">Insights</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <a
+            href="contact.html"
+            class="hidden lg:block btn-primary text-xs px-4 py-2"
+            >Get Started</a
+          >
+          <button
+            class="lg:hidden text-white p-2"
+            onclick="document.getElementById('mob').classList.toggle('hidden')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mob"
+          class="hidden lg:hidden pb-4 border-t border-white/10 mt-2 flex flex-col gap-3 pt-4"
+        >
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a
+          ><a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="team.html" class="nav-link">Team</a
+          ><a href="blog.html" class="nav-link text-white">Insights</a>
+          <a href="careers.html" class="nav-link">Careers</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+          <a href="contact.html" class="btn-primary w-fit mt-2">Get Started</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-navy py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-4">Ideas & Analysis</p>
+          <h1
+            class="font-display text-5xl lg:text-6xl text-white font-bold max-w-xl leading-tight"
+          >
+            Nexvora Insights
+          </h1>
+          <p class="text-slate-300 mt-5 max-w-lg">
+            Research, perspectives, and analysis from our consulting teams on
+            the forces shaping business across Africa and emerging markets.
+          </p>
+          <div class="w-16 h-1 bg-gold mt-8"></div>
+        </div>
+      </section>
+
+      <!-- Featured Article -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-8">Featured Article</p>
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80"
+                alt="Africa economic growth and digital economy"
+                class="w-full h-80 object-cover"
+              />
+              <div
+                class="absolute top-4 left-4 bg-gold px-3 py-1 text-navy text-xs font-bold uppercase tracking-widest"
+              >
+                Featured
+              </div>
+            </div>
+            <div>
+              <span
+                class="text-xs text-gold font-semibold tracking-widest uppercase"
+                >Economic Outlook</span
+              >
+              <h2
+                class="font-display text-3xl text-navy font-bold mt-3 mb-4 leading-tight"
+              >
+                Africa's Digital Decade: Why the Next $500B of Growth Will Be
+                Tech-Enabled
+              </h2>
+              <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                As mobile penetration surpasses 80% and fintech adoption
+                accelerates across the continent, we examine the structural
+                shifts creating a once-in-a-generation opportunity for
+                digital-native businesses and incumbents willing to transform.
+              </p>
+              <div class="flex items-center gap-4 text-xs text-slate-400 mb-6">
+                <span>By Adaeze Nwosu</span>
+                <span>·</span>
+                <span>March 12, 2025</span>
+                <span>·</span>
+                <span>8 min read</span>
+              </div>
+              <a href="#" class="btn-primary">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Grid -->
+      <section class="py-16 bg-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p class="section-label mb-10">Recent Articles</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop&q=80"
+                  alt="M&A trends in emerging markets"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >M&A Advisory</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  The Integration Trap: Why 60% of African M&A Deals
+                  Underdeliver
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  A deep dive into the most common post-merger failures and the
+                  three disciplines that separate deals that create value from
+                  those that destroy it.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>James Osei · Feb 28, 2025</span>
+                  <span>6 min</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&auto=format&fit=crop&q=80"
+                  alt="ESG strategy for African businesses"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >ESG & Governance</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  Building an ESG Strategy That Goes Beyond Compliance
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  ESG reporting is now table stakes. The real competitive
+                  advantage lies in embedding sustainability into your core
+                  business model—here's how leading African firms are doing it.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>Priya Mehta · Feb 14, 2025</span>
+                  <span>5 min</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&auto=format&fit=crop&q=80"
+                  alt="Leadership development for African executives"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >Leadership</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  What Separates Good Leaders from Transformational Ones
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  Insights from our leadership development work with over 200
+                  C-suite executives across Africa on the mindset shifts that
+                  define transformational leadership.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>Kwame Asante · Jan 30, 2025</span>
+                  <span>7 min</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&auto=format&fit=crop&q=80"
+                  alt="Cloud migration strategy for enterprises"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >Digital</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  Cloud Migration Without the Chaos: A Practical Roadmap
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  Based on 25 enterprise cloud programs, we share the sequencing
+                  decisions, risk controls, and organizational prerequisites
+                  that make cloud migrations succeed.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>Fatima Al-Rashid · Jan 18, 2025</span>
+                  <span>9 min</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&auto=format&fit=crop&q=80"
+                  alt="Infrastructure investment opportunities in Africa"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >Market Analysis</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  Infrastructure as Alpha: The $150B African Investment
+                  Opportunity
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  Infrastructure gaps across energy, logistics, and digital
+                  connectivity represent the most compelling risk-adjusted
+                  investment opportunity on the continent today.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>James Osei · Jan 5, 2025</span>
+                  <span>10 min</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white card-hover group">
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=80"
+                  alt="Strategy execution and organizational change"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-xs text-gold font-semibold tracking-widest uppercase"
+                  >Strategy</span
+                >
+                <h3
+                  class="font-display text-lg text-navy font-semibold mt-2 mb-3 leading-snug"
+                >
+                  The Strategy-Execution Gap: How to Close It for Good
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                  Most strategies fail not in design, but in execution. We
+                  explore the four organizational conditions that determine
+                  whether strategy translates into results.
+                </p>
+                <div
+                  class="flex items-center justify-between text-xs text-slate-400"
+                >
+                  <span>Adaeze Nwosu · Dec 20, 2024</span>
+                  <span>6 min</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="py-16 bg-navy">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+          <p class="section-label mb-4">Stay Informed</p>
+          <h2 class="font-display text-3xl text-white font-bold mb-4">
+            Subscribe to Nexvora Insights
+          </h2>
+          <p class="text-slate-400 text-sm mb-8">
+            Monthly analysis on strategy, transformation, and emerging market
+            dynamics—delivered to your inbox.
+          </p>
+          <form
+            class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+            onsubmit="event.preventDefault()"
+          >
+            <input
+              type="email"
+              placeholder="Your work email"
+              class="flex-1 px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-gold"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-gold text-navy font-semibold px-6 py-3 text-sm hover:bg-yellow-300 transition-colors whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-3 mb-5">
+              <div class="w-8 h-8 bg-gold flex items-center justify-center">
+                <span class="text-navy font-display font-bold text-sm">N</span>
+              </div>
+              <span class="font-display text-white text-lg font-semibold"
+                >Nexvora <span class="text-gold">Group</span></span
+              >
+            </a>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Global strategic advisory firm building enterprises that endure.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-400 text-sm hover:text-gold transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-sm uppercase tracking-widest mb-5"
+            >
+              Contact
+            </h4>
+            <p class="text-slate-400 text-sm mb-2">hello@nexvora.com</p>
+            <p class="text-slate-400 text-sm mb-2">+234 123 456 7890</p>
+            <p class="text-slate-400 text-sm">14 Victoria Island Blvd, Lagos</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-xs">
+            © 2025 Nexvora Group. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="privacy-policy.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-and-conditions.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >Terms & Conditions</a
+            >
+            <a
+              href="faq.html"
+              class="text-slate-500 text-xs hover:text-gold transition-colors"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
